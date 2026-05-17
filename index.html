@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bendecidos F.C</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ============== HEADER / NAVEGACIÓN ============== -->
+    <header class="header">
+        <div class="container header__container">
+            <img src="images/logo.png" alt="Logo Bendecidos F.C." class="logo__image" width="140">
+            
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link nav__link--active">INICIO</a></li>
+                    <li><a href="#jugadores" class="nav__link">JUGADORES</a></li>
+                    <li><a href="#galeria" class="nav__link">GALERÍA</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============== HERO ============== -->
+    <section class="hero" id="home">
+        <div class="hero__overlay"></div>
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    MÁS QUE AMIGOS,<br>
+                    <span class="hero__title--accent">SOMOS FAMILIA.</span>
+                </h1>
+                <p class="hero__description">
+                    Bendecidos F.C. es pasión, unión y respeto por el juego.
+                    Cada partido es una nueva historia que escribimos juntos.
+                </p>
+                <a href="#equipo" class="btn btn--primary">CONÓCENOS</a>
+            </div>
+            <div class="hero__image">
+                <!-- Placeholder de imagen -->
+                <div class="placeholder placeholder--hero"><img src="images/foto-5.jpg" alt="Equipo abrazado" width="100%"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== NUESTRO XI ============== -->
+    <section class="equipo" id="equipo">
+        <div class="container">
+            <div class="equipo__layout">
+                <!-- CANCHA DE FÚTBOL -->
+                <div class="cancha">
+                    <div class="cancha__header">
+                        <h2 class="cancha__title">NUESTRO XI</h2>
+                        <p class="cancha__subtitle">Haz clic en un jugador para ver<br>más información.</p>
+                    </div>
+
+                    <div class="cancha__field">
+                        <!-- Líneas decorativas -->
+                        <div class="cancha__center-line"></div>
+                        <div class="cancha__center-circle"></div>
+                        <div class="cancha__area cancha__area--top"></div>
+                        <div class="cancha__area cancha__area--bottom"></div>
+
+                        <!-- Delantero (1) -->
+                        <div class="player-spot" data-row="delantero" style="--col: 3;" data-number="9">
+                            <div class="jersey">
+                                <span class="jersey__number">9</span>
+                            </div>
+                            <span class="player-spot__name">S. FERNANDEZ</span>
+                        </div>
+
+                        <!-- Atacantes (3) -->
+                        <div class="player-spot" data-row="atacante" style="--col: 1;" data-number="11">
+                            <div class="jersey">
+                                <span class="jersey__number">14</span>
+                            </div>
+                            <span class="player-spot__name">M. CISTERNA</span>
+                        </div>
+                        <div class="player-spot player-spot--active" data-row="atacante" style="--col: 3;" data-number="10">
+                            <div class="jersey">
+                                <span class="jersey__number">10</span>
+                            </div>
+                            <span class="player-spot__name">S. RUBILAR</span>
+                        </div>
+                        <div class="player-spot" data-row="atacante" style="--col: 5;" data-number="7">
+                            <div class="jersey">
+                                <span class="jersey__number">7</span>
+                            </div>
+                            <span class="player-spot__name">M. PEREZ</span>
+                        </div>
+
+                        <!-- Medios (2) -->
+                        <div class="player-spot" data-row="medio" style="--col: 2;" data-number="8">
+                            <div class="jersey">
+                                <span class="jersey__number">8</span>
+                            </div>
+                            <span class="player-spot__name">N. HERRERA</span>
+                        </div>
+                        <div class="player-spot" data-row="medio" style="--col: 4;" data-number="6">
+                            <div class="jersey">
+                                <span class="jersey__number">6</span>
+                            </div>
+                            <span class="player-spot__name">A. MARCHANT</span>
+                        </div>
+
+                        <!-- Defensas (4) -->
+                        <div class="player-spot" data-row="defensa" style="--col: 1;" data-number="3">
+                            <div class="jersey">
+                                <span class="jersey__number">3</span>
+                            </div>
+                            <span class="player-spot__name">M. COLLAO</span>
+                        </div>
+                        <div class="player-spot" data-row="defensa" style="--col: 2.33;" data-number="4">
+                            <div class="jersey">
+                                <span class="jersey__number">15</span>
+                            </div>
+                            <span class="player-spot__name">M. FUENTEALBA</span>
+                        </div>
+                        <div class="player-spot" data-row="defensa" style="--col: 3.66;" data-number="5">
+                            <div class="jersey">
+                                <span class="jersey__number">3</span>
+                            </div>
+                            <span class="player-spot__name">J. VIDAL</span>
+                        </div>
+                        <div class="player-spot" data-row="defensa" style="--col: 5;" data-number="2">
+                            <div class="jersey">
+                                <span class="jersey__number">2</span>
+                            </div>
+                            <span class="player-spot__name">M. NUÑEZ</span>
+                        </div>
+
+                        <!-- Arquero (1) -->
+                        <div class="player-spot" data-row="arquero" style="--col: 3;" data-number="1">
+                            <div class="jersey jersey--gk">
+                                <span class="jersey__number">1</span>
+                            </div>
+                            <span class="player-spot__name">J. RODRIGUEZ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA DE JUGADOR -->
+                <aside class="player-card" id="playerCard">
+                    <button class="player-card__close" aria-label="Cerrar">×</button>
+                    <div class="player-card__header">
+                        <span class="player-card__number">10</span>
+                        <h3 class="player-card__name">A. PÉREZ</h3>
+                        <p class="player-card__role">Mediocampista</p>
+                    </div>
+                    <div class="player-card__photo">
+                        <div class="placeholder placeholder--player">[FOTO JUGADOR]</div>
+                    </div>
+                    <ul class="player-card__stats">
+                        <li>
+                            <span class="stat__icon">🎂</span>
+                            <div>
+                                <span class="stat__label">EDAD</span>
+                                <span class="stat__value">27 años</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="stat__icon">⚽</span>
+                            <div>
+                                <span class="stat__label">PIERNA HÁBIL</span>
+                                <span class="stat__value">Derecha</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="stat__icon">📏</span>
+                            <div>
+                                <span class="stat__label">ALTURA</span>
+                                <span class="stat__value">1.78 m</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="stat__icon">⚖️</span>
+                            <div>
+                                <span class="stat__label">PESO</span>
+                                <span class="stat__value">72 kg</span>
+                            </div>
+                        </li>
+                        <li class="stat--highlight">
+                            <span class="stat__icon">⭐</span>
+                            <div>
+                                <span class="stat__value">Máximo goleador</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <blockquote class="player-card__quote">
+                        "Jugar juntos es lo que gana cada partido."
+                    </blockquote>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== PLANTEL ============== -->
+    <section class="plantel" id="jugadores">
+        <div class="container">
+            <p class="section__pretitle">JUGADORES</p>
+            <h2 class="section__title">PLANTEL ACTUAL</h2>
+
+            <div class="plantel__grid">
+                <article class="player-tile">
+                    <span class="player-tile__number">1</span>
+                    <div class="player-tile__photo placeholder">[FOTO]</div>
+                    <h4 class="player-tile__name">PABLO<br>GARCÍA</h4>
+                    <p class="player-tile__role">ARQUERO</p>
+                </article>
+                <article class="player-tile">
+                    <span class="player-tile__number">2</span>
+                    <div class="player-tile__photo placeholder">[FOTO]</div>
+                    <h4 class="player-tile__name">RAÚL<br>SÁNCHEZ</h4>
+                    <p class="player-tile__role">DEFENSA</p>
+                </article>
+                <article class="player-tile">
+                    <span class="player-tile__number">3</span>
+                    <div class="player-tile__photo placeholder">[FOTO]</div>
+                    <h4 class="player-tile__name">CARLOS<br>LÓPEZ</h4>
+                    <p class="player-tile__role">DEFENSA</p>
+                </article>
+                <article class="player-tile">
+                    <span class="player-tile__number">4</span>
+                    <div class="player-tile__photo placeholder">[FOTO]</div>
+                    <h4 class="player-tile__name">DAVID<br>MARTÍNEZ</h4>
+                    <p class="player-tile__role">DEFENSA</p>
+                </article>
+                <article class="player-tile">
+                    <span class="player-tile__number">5</span>
+                    <div class="player-tile__photo placeholder">[FOTO]</div>
+                    <h4 class="player-tile__name">ÁLEX<br>HERNÁNDEZ</h4>
+                    <p class="player-tile__role">DEFENSA</p>
+                </article>
+                <article class="player-tile">
+                    <span class="player-tile__number">7</span>
+                    <div class="player-tile__photo placeholder">[FOTO]</div>
+                    <h4 class="player-tile__name">DIEGO<br>RAMOS</h4>
+                    <p class="player-tile__role">MEDIOCAMPISTA</p>
+                </article>
+                <article class="player-tile">
+                    <span class="player-tile__number">8</span>
+                    <div class="player-tile__photo placeholder">[FOTO]</div>
+                    <h4 class="player-tile__name">JUAN<br>PÉREZ</h4>
+                    <p class="player-tile__role">MEDIOCAMPISTA</p>
+                </article>
+                <article class="player-tile">
+                    <span class="player-tile__number">10</span>
+                    <div class="player-tile__photo placeholder">[FOTO]</div>
+                    <h4 class="player-tile__name">MATEO<br>VARGAS</h4>
+                    <p class="player-tile__role">MEDIOCAMPISTA</p>
+                </article>
+                <article class="player-tile">
+                    <span class="player-tile__number">11</span>
+                    <div class="player-tile__photo placeholder">[FOTO]</div>
+                    <h4 class="player-tile__name">ANDRÉS<br>TORRES</h4>
+                    <p class="player-tile__role">DELANTERO</p>
+                </article>
+                <article class="player-tile">
+                    <span class="player-tile__number">9</span>
+                    <div class="player-tile__photo placeholder">[FOTO]</div>
+                    <h4 class="player-tile__name">MIGUEL<br>SOTO</h4>
+                    <p class="player-tile__role">DELANTERO</p>
+                </article>
+            </div>
+
+            <div class="plantel__cta">
+                <a href="#" class="btn btn--ghost">VER TODOS LOS JUGADORES →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== GALERÍA ============== -->
+    <section class="galeria" id="galeria">
+        <div class="container galeria__container">
+            <div class="galeria__intro">
+                <p class="section__pretitle">GALERÍA</p>
+                <h2 class="section__title">NUESTROS<br>MEJORES MOMENTOS</h2>
+                <p class="galeria__text">
+                    Cada foto cuenta una historia.<br>
+                    Cada momento, una memoria.
+                </p>
+                <a href="#" class="btn btn--primary">VER GALERÍA</a>
+            </div>
+            <div class="galeria__grid">
+                <div class="galeria__item galeria__item--large placeholder">                    
+                    <img src="images/foto-1.jpg" alt="Logo Bendecidos F.C."  width="140">
+                </div>
+                <div class="galeria__item placeholder">
+                    <img src="images/foto-2.jpg" alt="Logo Bendecidos F.C."  width="140">
+                </div>
+                <div class="galeria__item placeholder">
+                    <img src="images/foto-3.jpg" alt="Logo Bendecidos F.C."  width="140">
+                </div>
+                <div class="galeria__item placeholder">
+                    <img src="images/foto-4.jpg" alt="Logo Bendecidos F.C."  width="140">
+                </div>
+                <div class="galeria__item placeholder">
+                    <img src="images/foto-5.jpg" alt="Logo Bendecidos F.C."  width="140">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== FOOTER ============== -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col footer__col--brand">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo Bendecidos F.C." class="logo__image" width="140">
+                </div>
+                <p class="footer__tagline">
+                    Más que un equipo, una familia.<br>
+                    Jugamos con pasión, ganamos con humildad.
+                </p>
+            </div>
+
+            <div class="footer__col">
+                <h5 class="footer__title">CONTACTO</h5>
+                <ul class="footer__list">
+                    <li>✉ bendecidosfc@gmail.com</li>
+                    <li>☎ +569 7875 5678</li>
+                    <li>📍 Colina, Chile</li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h5 class="footer__title">SÍGUENOS</h5>
+                <ul class="footer__social">
+                    <li><a href="#" aria-label="Instagram">IG</a></li>
+                    <li><a href="#" aria-label="Facebook">FB</a></li>
+                    <li><a href="#" aria-label="YouTube">YT</a></li>
+                    <li><a href="#" aria-label="TikTok">TT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copy">
+            © 2026 Bendecidos F.C. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
