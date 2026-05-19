@@ -6,49 +6,139 @@
     <title>Bendecidos F.C</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
     <!-- ============== HEADER / NAVEGACIÓN ============== -->
     <header class="header">
         <div class="container header__container">
-            <img src="images/logo.png" alt="Logo Bendecidos F.C." class="logo__image" width="140">
-            
+
+            <!-- LOGO -->
+            <a href="#home" class="header__logo">
+                <img src="images/logo.png"
+                    alt="Logo Bendecidos F.C."
+                    class="logo__image"
+                    width="140">
+            </a>
+
+            <!-- NAV -->
             <nav class="nav" id="nav">
                 <ul class="nav__list">
-                    <li><a href="#home" class="nav__link nav__link--active">INICIO</a></li>
-                    <li><a href="#jugadores" class="nav__link">JUGADORES</a></li>
-                    <li><a href="#galeria" class="nav__link">GALERÍA</a></li>
+
+                    <li>
+                        <a href="#home" class="nav__link nav__link--active">
+                            <i class="fa-solid fa-house"></i>
+                            <span>INICIO</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#jugadores" class="nav__link">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>JUGADORES</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#galeria" class="nav__link">
+                            <i class="fa-solid fa-image"></i>
+                            <span>GALERÍA</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#awards" class="nav__link">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span>AWARDS</span>
+                        </a>
+                    </li>
+
                 </ul>
             </nav>
 
+            <!-- REDES -->
+            <div class="header__social">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+            <!-- MENU MOBILE -->
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
+
         </div>
     </header>
 
     <!-- ============== HERO ============== -->
     <section class="hero" id="home">
+
+        <!-- BACKGROUND -->
+        <div class="hero__bg"></div>
+
+        <!-- OVERLAY -->
         <div class="hero__overlay"></div>
+
+        <!-- LIGHT EFFECT -->
+        <div class="hero__glow"></div>
+
         <div class="container hero__container">
+
+            <!-- CONTENT -->
             <div class="hero__content">
+
+                <span class="hero__badge">
+                    ⚽ Bendecidos F.C.
+                </span>
+
                 <h1 class="hero__title">
                     MÁS QUE AMIGOS,<br>
-                    <span class="hero__title--accent">SOMOS FAMILIA.</span>
+                    <span class="hero__title--accent">
+                        SOMOS FAMILIA.
+                    </span>
                 </h1>
+
                 <p class="hero__description">
-                    Bendecidos F.C. es pasión, unión y respeto por el juego.
-                    Cada partido es una nueva historia que escribimos juntos.
+                    Bendecidos F.C. representa pasión, humildad y unión.
+                    Cada partido es una oportunidad para dejar el corazón
+                    en la cancha y seguir creciendo juntos.
                 </p>
-                <a href="#equipo" class="btn btn--primary">CONÓCENOS</a>
+
+                <div class="hero__buttons">
+                    <a href="#equipo" class="btn btn--primary">
+                        CONÓCENOS
+                    </a>
+
+                    <a href="#galeria" class="btn btn--secondary">
+                        VER GALERÍA
+                    </a>
+                </div>
+
             </div>
+
+            <!-- IMAGE -->
             <div class="hero__image">
-                <!-- Placeholder de imagen -->
-                <div class="placeholder placeholder--hero"><img src="images/foto-5.jpg" alt="Equipo abrazado" width="100%"></div>
+
+                <img src="images/foto-5.jpg"
+                    alt="Equipo Bendecidos F.C."
+                    class="hero__img">
+
             </div>
+
         </div>
     </section>
 
@@ -59,8 +149,7 @@
                 <!-- CANCHA DE FÚTBOL -->
                 <div class="cancha">
                     <div class="cancha__header">
-                        <h2 class="cancha__title">NUESTRO XI</h2>
-                        <p class="cancha__subtitle">Haz clic en un jugador para ver<br>más información.</p>
+                        <h2 class="cancha__title">NUESTRO EQUIPO</h2>
                     </div>
 
                     <div class="cancha__field">
@@ -157,7 +246,12 @@
                         <p class="player-card__role">Mediocampista</p>
                     </div>
                     <div class="player-card__photo">
-                        <div class="placeholder placeholder--player">[FOTO JUGADOR]</div>
+                        <img
+                            src="images/Jugadores/jugador-2.png"
+                            alt="Jugador"
+                            class="player-card__img"
+                            id="playerImage"
+                        >
                     </div>
                     <ul class="player-card__stats">
                         <li>
@@ -212,62 +306,82 @@
             <div class="plantel__grid">
                 <article class="player-tile">
                     <span class="player-tile__number">1</span>
-                    <div class="player-tile__photo placeholder">[FOTO]</div>
-                    <h4 class="player-tile__name">PABLO<br>GARCÍA</h4>
+                    <div class="player-tile__photo">
+                        <img src="images/Jugadores/jugador-2.png" alt="Jain Dy">
+                    </div>
+                    <h4 class="player-tile__name">JAIN<br>DY</h4>
                     <p class="player-tile__role">ARQUERO</p>
                 </article>
                 <article class="player-tile">
                     <span class="player-tile__number">2</span>
-                    <div class="player-tile__photo placeholder">[FOTO]</div>
-                    <h4 class="player-tile__name">RAÚL<br>SÁNCHEZ</h4>
+                    <div class="player-tile__photo">
+                        <img src="images/Jugadores/jugador-2.png" alt="Jain Dy">
+                    </div>
+                    <h4 class="player-tile__name">MANUEL<br>COLLAO</h4>
                     <p class="player-tile__role">DEFENSA</p>
                 </article>
                 <article class="player-tile">
                     <span class="player-tile__number">3</span>
-                    <div class="player-tile__photo placeholder">[FOTO]</div>
-                    <h4 class="player-tile__name">CARLOS<br>LÓPEZ</h4>
+                    <div class="player-tile__photo">
+                        <img src="images/Jugadores/jugador-3.png" alt="Pablo García">
+                    </div>
+                    <h4 class="player-tile__name">JOAQUÍN<br>VIDAL</h4>
                     <p class="player-tile__role">DEFENSA</p>
                 </article>
                 <article class="player-tile">
-                    <span class="player-tile__number">4</span>
-                    <div class="player-tile__photo placeholder">[FOTO]</div>
-                    <h4 class="player-tile__name">DAVID<br>MARTÍNEZ</h4>
+                    <span class="player-tile__number">15</span>
+                    <div class="player-tile__photo">
+                        <img src="images/Jugadores/jugador-15.png" alt="Matías Fuentealba">
+                    </div>
+                    <h4 class="player-tile__name">MATIAS<br>FUENTEALBA</h4>
                     <p class="player-tile__role">DEFENSA</p>
                 </article>
                 <article class="player-tile">
-                    <span class="player-tile__number">5</span>
-                    <div class="player-tile__photo placeholder">[FOTO]</div>
-                    <h4 class="player-tile__name">ÁLEX<br>HERNÁNDEZ</h4>
-                    <p class="player-tile__role">DEFENSA</p>
-                </article>
-                <article class="player-tile">
-                    <span class="player-tile__number">7</span>
-                    <div class="player-tile__photo placeholder">[FOTO]</div>
-                    <h4 class="player-tile__name">DIEGO<br>RAMOS</h4>
+                    <span class="player-tile__number">6</span>
+                    <div class="player-tile__photo">
+                        <img src="images/Jugadores/jugador-6.png" alt="Alejandro Marchant">
+                    </div>
+                    <h4 class="player-tile__name">ALEJANDRO<br>MARCHANT</h4>
                     <p class="player-tile__role">MEDIOCAMPISTA</p>
                 </article>
                 <article class="player-tile">
                     <span class="player-tile__number">8</span>
-                    <div class="player-tile__photo placeholder">[FOTO]</div>
-                    <h4 class="player-tile__name">JUAN<br>PÉREZ</h4>
+                    <div class="player-tile__photo">
+                        <img src="images/Jugadores/jugador-8.png" alt="Nicolás Herrera">
+                    </div>
+                    <h4 class="player-tile__name">NICOLAS<br>HERRERA</h4>
                     <p class="player-tile__role">MEDIOCAMPISTA</p>
                 </article>
                 <article class="player-tile">
                     <span class="player-tile__number">10</span>
-                    <div class="player-tile__photo placeholder">[FOTO]</div>
-                    <h4 class="player-tile__name">MATEO<br>VARGAS</h4>
+                    <div class="player-tile__photo">
+                        <img src="images/Jugadores/jugador-10.png" alt="Sebastian Rubilar">
+                    </div>
+                    <h4 class="player-tile__name">SEBASTIAN<br>RUBILAR</h4>
                     <p class="player-tile__role">MEDIOCAMPISTA</p>
                 </article>
                 <article class="player-tile">
-                    <span class="player-tile__number">11</span>
-                    <div class="player-tile__photo placeholder">[FOTO]</div>
-                    <h4 class="player-tile__name">ANDRÉS<br>TORRES</h4>
+                    <span class="player-tile__number">14</span>
+                    <div class="player-tile__photo">
+                        <img src="images/Jugadores/jugador-14.png" alt="Marcos Cisterna">
+                    </div>
+                    <h4 class="player-tile__name">MARCOS<br>CISTERNA</h4>
                     <p class="player-tile__role">DELANTERO</p>
                 </article>
                 <article class="player-tile">
                     <span class="player-tile__number">9</span>
-                    <div class="player-tile__photo placeholder">[FOTO]</div>
-                    <h4 class="player-tile__name">MIGUEL<br>SOTO</h4>
+                    <div class="player-tile__photo">
+                        <img src="images/Jugadores/jugador-9.png" alt="Samuel Fernandez">
+                    </div>
+                    <h4 class="player-tile__name">SAMUEL<br>FERNANDEZ</h4>
+                    <p class="player-tile__role">DELANTERO</p>
+                </article>
+                <article class="player-tile">
+                    <span class="player-tile__number">7</span>
+                    <div class="player-tile__photo">
+                        <img src="images/Jugadores/jugador-7.png" alt="Mauricio Perez">
+                    </div>
+                    <h4 class="player-tile__name">MAURICIO<br>PEREZ</h4>
                     <p class="player-tile__role">DELANTERO</p>
                 </article>
             </div>
@@ -292,19 +406,19 @@
             </div>
             <div class="galeria__grid">
                 <div class="galeria__item galeria__item--large placeholder">                    
-                    <img src="images/foto-1.jpg" alt="Logo Bendecidos F.C."  width="140">
+                    <img src="images/foto-1.jpg" alt="Logo Bendecidos F.C.">
                 </div>
                 <div class="galeria__item placeholder">
-                    <img src="images/foto-2.jpg" alt="Logo Bendecidos F.C."  width="140">
+                    <img src="images/foto-2.jpeg" alt="Logo Bendecidos F.C.">
                 </div>
                 <div class="galeria__item placeholder">
-                    <img src="images/foto-3.jpg" alt="Logo Bendecidos F.C."  width="140">
+                    <img src="images/foto-3.jpg" alt="Logo Bendecidos F.C.">
                 </div>
                 <div class="galeria__item placeholder">
-                    <img src="images/foto-4.jpg" alt="Logo Bendecidos F.C."  width="140">
+                    <img src="images/foto-4.jpg" alt="Logo Bendecidos F.C.">
                 </div>
                 <div class="galeria__item placeholder">
-                    <img src="images/foto-5.jpg" alt="Logo Bendecidos F.C."  width="140">
+                    <img src="images/foto-5.jpg" alt="Logo Bendecidos F.C.">
                 </div>
             </div>
         </div>
@@ -334,11 +448,31 @@
 
             <div class="footer__col">
                 <h5 class="footer__title">SÍGUENOS</h5>
+
                 <ul class="footer__social">
-                    <li><a href="#" aria-label="Instagram">IG</a></li>
-                    <li><a href="#" aria-label="Facebook">FB</a></li>
-                    <li><a href="#" aria-label="YouTube">YT</a></li>
-                    <li><a href="#" aria-label="TikTok">TT</a></li>
+                    <li>
+                        <a href="https://www.instagram.com/bendebende19/?hl=es" aria-label="Instagram" class="instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://web.facebook.com/bendecidos.fc.7" aria-label="Facebook" class="facebook" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/@bendecidosfc7" aria-label="YouTube" class="youtube" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@bendecidosfc" aria-label="TikTok" class="tiktok" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

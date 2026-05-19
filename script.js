@@ -8,18 +8,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menuToggle');
     const nav = document.getElementById('nav');
 
-    if (menuToggle && nav) {
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('is-open');
-        });
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('is-open');
+        menuToggle.classList.toggle('active');
+    });
 
-        // Cerrar el menú al hacer clic en un enlace
-        nav.querySelectorAll('.nav__link').forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('is-open');
-            });
+    // Cerrar menú al hacer click en un link
+    document.querySelectorAll('.nav__link').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('is-open');
+            menuToggle.classList.remove('active');
         });
-    }
+    });
 
     /* ---------- Navegación activa al hacer scroll ---------- */
     const navLinks = document.querySelectorAll('.nav__link');
@@ -48,17 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ---------- Datos de jugadores (Nuestro XI) ---------- */
     const playersData = {
-        '1':  { name: 'A. MORENO',     role: 'Arquero',       age: '29 años', foot: 'Derecha',   height: '1.86 m', weight: '80 kg', highlight: 'Capitán del equipo', quote: '"Un buen arquero defiende a su equipo con el corazón."' },
-        '2':  { name: 'R. SALAZAR',    role: 'Defensa',       age: '26 años', foot: 'Derecha',   height: '1.80 m', weight: '76 kg', highlight: 'Imbatible al uno contra uno', quote: '"La defensa es el primer paso del ataque."' },
-        '3':  { name: 'R. VARGAS',     role: 'Defensa',       age: '28 años', foot: 'Izquierda', height: '1.82 m', weight: '78 kg', highlight: 'Especialista en tiros libres', quote: '"Nadie pasa sin permiso."' },
-        '4':  { name: 'J. RAMOS',      role: 'Defensa',       age: '30 años', foot: 'Derecha',   height: '1.84 m', weight: '79 kg', highlight: 'Líder de la zaga', quote: '"Capitán por convicción."' },
-        '5':  { name: 'P. FLORES',     role: 'Defensa',       age: '25 años', foot: 'Derecha',   height: '1.83 m', weight: '77 kg', highlight: 'Cabeceador implacable', quote: '"Cada partido, una batalla."' },
-        '6':  { name: 'J. HERNÁNDEZ',  role: 'Mediocampista', age: '26 años', foot: 'Derecha',   height: '1.76 m', weight: '70 kg', highlight: 'Cerebro del equipo', quote: '"El control empieza desde atrás."' },
-        '7':  { name: 'N. GONZÁLEZ',   role: 'Atacante',      age: '24 años', foot: 'Izquierda', height: '1.74 m', weight: '68 kg', highlight: 'Velocidad pura por la banda', quote: '"Velocidad y precisión."' },
-        '8':  { name: 'C. TORRES',     role: 'Mediocampista', age: '27 años', foot: 'Derecha',   height: '1.78 m', weight: '73 kg', highlight: 'Recuperador del medio', quote: '"El medio campo es el corazón del juego."' },
-        '9':  { name: 'A. RODRÍGUEZ',  role: 'Delantero',     age: '23 años', foot: 'Derecha',   height: '1.82 m', weight: '76 kg', highlight: 'Goleador del torneo', quote: '"El gol es la recompensa al esfuerzo."' },
-        '10': { name: 'A. PÉREZ',      role: 'Mediocampista', age: '27 años', foot: 'Derecha',   height: '1.78 m', weight: '72 kg', highlight: 'Máximo goleador', quote: '"Jugar juntos es lo que gana cada partido."' },
-        '11': { name: 'J. MARTÍNEZ',   role: 'Atacante',      age: '25 años', foot: 'Izquierda', height: '1.75 m', weight: '70 kg', highlight: 'Asistencias en cada partido', quote: '"La creatividad es mi mejor arma."' }
+        '1':  { name: 'A. MORENO',     role: 'Arquero',       age: '29 años', foot: 'Derecha',   height: '1.86 m', weight: '80 kg', highlight: 'Capitán del equipo', quote: '"Un buen arquero defiende a su equipo con el corazón."', image: 'images/Jugadores/jugador-1.png' },
+        '2':  { name: 'R. SALAZAR',    role: 'Defensa',       age: '26 años', foot: 'Derecha',   height: '1.80 m', weight: '76 kg', highlight: 'Imbatible al uno contra uno', quote: '"La defensa es el primer paso del ataque."', image: 'images/Jugadores/jugador-2.png' },
+        '3':  { name: 'R. VARGAS',     role: 'Defensa',       age: '28 años', foot: 'Izquierda', height: '1.82 m', weight: '78 kg', highlight: 'Especialista en tiros libres', quote: '"Nadie pasa sin permiso."', image: 'images/Jugadores/jugador-3.png' },
+        '4':  { name: 'J. RAMOS',      role: 'Defensa',       age: '30 años', foot: 'Derecha',   height: '1.84 m', weight: '79 kg', highlight: 'Líder de la zaga', quote: '"Capitán por convicción."', image: 'images/Jugadores/jugador-4.png' },
+        '5':  { name: 'P. FLORES',     role: 'Defensa',       age: '25 años', foot: 'Derecha',   height: '1.83 m', weight: '77 kg', highlight: 'Cabeceador implacable', quote: '"Cada partido, una batalla."', image: 'images/Jugadores/jugador-5.png' },
+        '6':  { name: 'J. HERNÁNDEZ',  role: 'Mediocampista', age: '26 años', foot: 'Derecha',   height: '1.76 m', weight: '70 kg', highlight: 'Cerebro del equipo', quote: '"El control empieza desde atrás."', image: 'images/Jugadores/jugador-6.png' },
+        '7':  { name: 'N. GONZÁLEZ',   role: 'Atacante',      age: '24 años', foot: 'Izquierda', height: '1.74 m', weight: '68 kg', highlight: 'Velocidad pura por la banda', quote: '"Velocidad y precisión."', image: 'images/Jugadores/jugador-7.png' },
+        '8':  { name: 'C. TORRES',     role: 'Mediocampista', age: '27 años', foot: 'Derecha',   height: '1.78 m', weight: '73 kg', highlight: 'Recuperador del medio', quote: '"El medio campo es el corazón del juego."', image: 'images/Jugadores/jugador-8.png' },
+        '9':  { name: 'A. RODRÍGUEZ',  role: 'Delantero',     age: '23 años', foot: 'Derecha',   height: '1.82 m', weight: '76 kg', highlight: 'Goleador del torneo', quote: '"El gol es la recompensa al esfuerzo."', image: 'images/Jugadores/jugador-9.png' },
+        '10': { name: 'S. RUBILAR',    role: 'Mediocampista', age: '27 años', foot: 'Derecha',   height: '1.78 m', weight: '72 kg', highlight: 'Máximo goleador', quote: '"Jugar juntos es lo que gana cada partido."', image: 'images/Jugadores/jugador-10.png' },
+        '11': { name: 'J. MARTÍNEZ',   role: 'Atacante',      age: '25 años', foot: 'Izquierda', height: '1.75 m', weight: '70 kg', highlight: 'Asistencias en cada partido', quote: '"La creatividad es mi mejor arma."', image: 'images/Jugadores/jugador-11.png' }
     };
 
     /* ---------- Interactividad de la cancha ---------- */
@@ -76,19 +76,39 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = playersData[number];
 
             if (data && playerCard) {
+
+            // Animación fade
+            playerCard.style.opacity = '0.6';
+            playerCard.style.transform = 'translateY(10px)';
+
+            setTimeout(() => {
+
                 playerCard.querySelector('.player-card__number').textContent = number;
                 playerCard.querySelector('.player-card__name').textContent = data.name;
                 playerCard.querySelector('.player-card__role').textContent = data.role;
                 playerCard.querySelector('.player-card__quote').textContent = data.quote;
 
-                // Actualizar las estadísticas (orden: edad, pierna, altura, peso, destacado)
+                // Imagen dinámica
+                const playerImage = document.getElementById('playerImage');
+
+                playerImage.src = data.image;
+                playerImage.alt = data.name;
+
+                // Estadísticas
                 const statValues = playerCard.querySelectorAll('.stat__value');
+
                 statValues[0].textContent = data.age;
                 statValues[1].textContent = data.foot;
                 statValues[2].textContent = data.height;
                 statValues[3].textContent = data.weight;
                 statValues[4].textContent = data.highlight;
-            }
+
+                // Restaurar animación
+                playerCard.style.opacity = '1';
+                playerCard.style.transform = 'translateY(0)';
+
+            }, 180);
+        }
         });
     });
 
