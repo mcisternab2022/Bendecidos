@@ -48,17 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ---------- Datos de jugadores (Nuestro XI) ---------- */
     const playersData = {
-        '1':  { name: 'A. MORENO',     role: 'Arquero',       age: '29 años', foot: 'Derecha',   height: '1.86 m', weight: '80 kg', highlight: 'Capitán del equipo', quote: '"Un buen arquero defiende a su equipo con el corazón."', image: 'images/Jugadores/jugador-1.png' },
-        '2':  { name: 'R. SALAZAR',    role: 'Defensa',       age: '26 años', foot: 'Derecha',   height: '1.80 m', weight: '76 kg', highlight: 'Imbatible al uno contra uno', quote: '"La defensa es el primer paso del ataque."', image: 'images/Jugadores/jugador-2.png' },
-        '3':  { name: 'R. VARGAS',     role: 'Defensa',       age: '28 años', foot: 'Izquierda', height: '1.82 m', weight: '78 kg', highlight: 'Especialista en tiros libres', quote: '"Nadie pasa sin permiso."', image: 'images/Jugadores/jugador-3.png' },
-        '4':  { name: 'J. RAMOS',      role: 'Defensa',       age: '30 años', foot: 'Derecha',   height: '1.84 m', weight: '79 kg', highlight: 'Líder de la zaga', quote: '"Capitán por convicción."', image: 'images/Jugadores/jugador-4.png' },
-        '5':  { name: 'P. FLORES',     role: 'Defensa',       age: '25 años', foot: 'Derecha',   height: '1.83 m', weight: '77 kg', highlight: 'Cabeceador implacable', quote: '"Cada partido, una batalla."', image: 'images/Jugadores/jugador-5.png' },
-        '6':  { name: 'J. HERNÁNDEZ',  role: 'Mediocampista', age: '26 años', foot: 'Derecha',   height: '1.76 m', weight: '70 kg', highlight: 'Cerebro del equipo', quote: '"El control empieza desde atrás."', image: 'images/Jugadores/jugador-6.png' },
-        '7':  { name: 'N. GONZÁLEZ',   role: 'Atacante',      age: '24 años', foot: 'Izquierda', height: '1.74 m', weight: '68 kg', highlight: 'Velocidad pura por la banda', quote: '"Velocidad y precisión."', image: 'images/Jugadores/jugador-7.png' },
-        '8':  { name: 'C. TORRES',     role: 'Mediocampista', age: '27 años', foot: 'Derecha',   height: '1.78 m', weight: '73 kg', highlight: 'Recuperador del medio', quote: '"El medio campo es el corazón del juego."', image: 'images/Jugadores/jugador-8.png' },
-        '9':  { name: 'A. RODRÍGUEZ',  role: 'Delantero',     age: '23 años', foot: 'Derecha',   height: '1.82 m', weight: '76 kg', highlight: 'Goleador del torneo', quote: '"El gol es la recompensa al esfuerzo."', image: 'images/Jugadores/jugador-9.png' },
-        '10': { name: 'S. RUBILAR',    role: 'Mediocampista', age: '27 años', foot: 'Derecha',   height: '1.78 m', weight: '72 kg', highlight: 'Máximo goleador', quote: '"Jugar juntos es lo que gana cada partido."', image: 'images/Jugadores/jugador-10.png' },
-        '11': { name: 'J. MARTÍNEZ',   role: 'Atacante',      age: '25 años', foot: 'Izquierda', height: '1.75 m', weight: '70 kg', highlight: 'Asistencias en cada partido', quote: '"La creatividad es mi mejor arma."', image: 'images/Jugadores/jugador-11.png' }
+        '1':  { name: 'J. RODRIGUEZ',  role: 'Arquero',       age: '28 años', foot: 'Derecha',   height: '1.66 m', weight: '70 kg', highlight: 'Mejor arquero en la historia del club', quote: '"Traigan cigarros pa la cana"', image: 'images/Jugadores/jugador-1.png' },
+        '2':  { name: 'M. NUÑEZ',      role: 'Lateral Derecho',       age: '27 años', foot: 'Derecha',   height: '1.70 m', weight: '86 kg', highlight: 'Imbatible al uno contra uno', quote: '"Por qué estoy de lateral? llevame a paraíso."', image: 'images/Jugadores/jugador-2.png' },
+        '11':  { name: 'M. COLLAO',     role: 'Lateral Izquierdo',       age: '28 años', foot: 'Izquierda', height: '1.82 m', weight: '78 kg', highlight: 'Un lateral con recorrido', quote: '"Puedo ir con la Marce?."', image: 'images/Jugadores/jugador-3.png' },
+        '15':  { name: 'M. FUENTEALBA',      role: 'Defensa',       age: '30 años', foot: 'Derecha',   height: '1.84 m', weight: '79 kg', highlight: 'Capitán del equipo', quote: '"Ah no si no, es que por lo mismo le dije yo."', image: 'images/Jugadores/jugador-4.png' },
+        '3':  { name: 'J. VIDAL',     role: 'Defensa',       age: '32 años', foot: 'Derecha',   height: '1.83 m', weight: '77 kg', highlight: 'Líder de la zaga', quote: '"Prende oscurito, vamos por sus Bolivianas."', image: 'images/Jugadores/jugador-5.png' },
+        '6':  { name: 'A. MARCHANT',  role: 'Mediocampista', age: '30 años', foot: 'Derecha',   height: '1.76 m', weight: '70 kg', highlight: 'El contención del equipo', quote: '"Crossfit no es de wekos perro."', image: 'images/Jugadores/jugador-6.png' },
+        '7':  { name: 'M. PEREZ',   role: 'Atacante',      age: '24 años', foot: 'Derecha', height: '1.74 m', weight: '68 kg', highlight: 'Goleador historico del club', quote: '"Nada mejor que un fulbito para pasar las penas."', image: 'images/Jugadores/jugador-7.png' },
+        '8':  { name: 'N. HERRERA',     role: 'Mediocampista', age: '28 años', foot: 'Derecha',   height: '1.70 m', weight: '83 kg', highlight: 'Fuerte, pero al balong', quote: '"Cabros paguen la cancha."', image: 'images/Jugadores/jugador-8.png' },
+        '9':  { name: 'S. FERNANDEZ',  role: 'Delantero',     age: '29 años', foot: 'Derecha',   height: '1.82 m', weight: '76 kg', highlight: 'Goleador de raza', quote: '"Alguien se va a comer eso?."', image: 'images/Jugadores/jugador-9.png' },
+        '10': { name: 'S. RUBILAR',    role: 'Mediocampista', age: '30 años', foot: 'Derecha',   height: '1.78 m', weight: '72 kg', highlight: 'Creador de juego.', quote: '"Esteee compadre, loco imbecil."', image: 'images/Jugadores/jugador-10.png' },
+        '14': { name: 'M. CISTERNA',   role: 'Atacante',      age: '28 años', foot: 'Derecha', height: '1.73 m', weight: '75 kg', highlight: 'El lujo hecho persona', quote: '"Si, yo refunde este club...Sale paraíso?."', image: 'images/Jugadores/jugador-11.png' }
     };
 
     /* ---------- Interactividad de la cancha ---------- */
@@ -112,16 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* ---------- Cerrar tarjeta de jugador (visual) ---------- */
-    const closeCard = document.querySelector('.player-card__close');
-    if (closeCard) {
-        closeCard.addEventListener('click', () => {
-            playerCard.style.opacity = '0';
-            setTimeout(() => {
-                playerCard.style.opacity = '1';
-            }, 300);
-        });
-    }
 
     /* ---------- Animación de aparición al hacer scroll ---------- */
     const observerOptions = {
@@ -144,5 +134,36 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         fadeObserver.observe(el);
     });
+
+    /* ---------- Animación cambio de Logo ---------- */
+    const logoHeader = document.getElementById('logoEquipo');
+    const logoFooter = document.getElementById('footerLogo');
+
+    let logoActual = 'antiguo';
+
+    function cambiarLogos(e) {
+
+        if (e) {
+            e.preventDefault();
+        }
+
+        if (logoActual === 'antiguo') {
+
+            logoHeader.src = 'images/logo.png';
+            logoFooter.src = 'images/logo.png';
+
+            logoActual = 'nuevo';
+
+        } else {
+
+            logoHeader.src = 'images/logo-antiguo.png';
+            logoFooter.src = 'images/logo-antiguo.png';
+
+            logoActual = 'antiguo';
+        }
+    }
+
+    logoHeader.addEventListener('click', cambiarLogos);
+    logoFooter.addEventListener('click', cambiarLogos);
 
 });

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bendecidos F.C</title>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -16,9 +16,10 @@
 
             <!-- LOGO -->
             <a href="#home" class="header__logo">
-                <img src="images/logo.png"
+                <img src="images/logo-antiguo.png"
                     alt="Logo Bendecidos F.C."
                     class="logo__image"
+                    id="logoEquipo"
                     width="140">
             </a>
 
@@ -60,15 +61,15 @@
             <!-- REDES -->
             <div class="header__social">
 
-                <a href="#" aria-label="Instagram">
+                <a href="https://www.instagram.com/bendebende19/?hl=es" aria-label="Instagram" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
 
-                <a href="#" aria-label="TikTok">
-                    <i class="fa-brands fa-tiktok"></i>
+                <a href="https://web.facebook.com/bendecidos.fc.7" aria-label="Facebook" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
                 </a>
 
-                <a href="#" aria-label="YouTube">
+                <a href="https://web.facebook.com/bendecidos.fc.7" aria-label="YouTube" target="_blank">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
 
@@ -168,7 +169,7 @@
                         </div>
 
                         <!-- Atacantes (3) -->
-                        <div class="player-spot" data-row="atacante" style="--col: 1;" data-number="11">
+                        <div class="player-spot" data-row="atacante" style="--col: 1;" data-number="14">
                             <div class="jersey">
                                 <span class="jersey__number">14</span>
                             </div>
@@ -202,19 +203,19 @@
                         </div>
 
                         <!-- Defensas (4) -->
-                        <div class="player-spot" data-row="defensa" style="--col: 1;" data-number="3">
+                        <div class="player-spot" data-row="defensa" style="--col: 1;" data-number="11">
                             <div class="jersey">
-                                <span class="jersey__number">3</span>
+                                <span class="jersey__number">11</span>
                             </div>
                             <span class="player-spot__name">M. COLLAO</span>
                         </div>
-                        <div class="player-spot" data-row="defensa" style="--col: 2.33;" data-number="4">
+                        <div class="player-spot" data-row="defensa" style="--col: 2.33;" data-number="15">
                             <div class="jersey">
                                 <span class="jersey__number">15</span>
                             </div>
                             <span class="player-spot__name">M. FUENTEALBA</span>
                         </div>
-                        <div class="player-spot" data-row="defensa" style="--col: 3.66;" data-number="5">
+                        <div class="player-spot" data-row="defensa" style="--col: 3.66;" data-number="3">
                             <div class="jersey">
                                 <span class="jersey__number">3</span>
                             </div>
@@ -239,15 +240,14 @@
 
                 <!-- TARJETA DE JUGADOR -->
                 <aside class="player-card" id="playerCard">
-                    <button class="player-card__close" aria-label="Cerrar">×</button>
                     <div class="player-card__header">
                         <span class="player-card__number">10</span>
-                        <h3 class="player-card__name">A. PÉREZ</h3>
+                        <h3 class="player-card__name">S. RUBILAR</h3>
                         <p class="player-card__role">Mediocampista</p>
                     </div>
                     <div class="player-card__photo">
                         <img
-                            src="images/Jugadores/jugador-2.png"
+                            src="images/Jugadores/jugador-10.png"
                             alt="Jugador"
                             class="player-card__img"
                             id="playerImage"
@@ -258,7 +258,7 @@
                             <span class="stat__icon">🎂</span>
                             <div>
                                 <span class="stat__label">EDAD</span>
-                                <span class="stat__value">27 años</span>
+                                <span class="stat__value">30 años</span>
                             </div>
                         </li>
                         <li>
@@ -279,18 +279,18 @@
                             <span class="stat__icon">⚖️</span>
                             <div>
                                 <span class="stat__label">PESO</span>
-                                <span class="stat__value">72 kg</span>
+                                <span class="stat__value">75 kg</span>
                             </div>
                         </li>
                         <li class="stat--highlight">
                             <span class="stat__icon">⭐</span>
                             <div>
-                                <span class="stat__value">Máximo goleador</span>
+                                <span class="stat__value">Creador de juego.</span>
                             </div>
                         </li>
                     </ul>
                     <blockquote class="player-card__quote">
-                        "Jugar juntos es lo que gana cada partido."
+                        "Esteee compadre, loco imbecil."
                     </blockquote>
                 </aside>
             </div>
@@ -427,10 +427,16 @@
     <!-- ============== FOOTER ============== -->
     <footer class="footer">
         <div class="container footer__container">
+
             <div class="footer__col footer__col--brand">
                 <div class="logo">
-                    <img src="images/logo.png" alt="Logo Bendecidos F.C." class="logo__image" width="140">
+                    <img src="images/logo-antiguo.png"
+                        alt="Logo Bendecidos F.C."
+                        class="logo__image"
+                        id="footerLogo"
+                        width="140">
                 </div>
+
                 <p class="footer__tagline">
                     Más que un equipo, una familia.<br>
                     Jugamos con pasión, ganamos con humildad.
@@ -439,6 +445,7 @@
 
             <div class="footer__col">
                 <h5 class="footer__title">CONTACTO</h5>
+
                 <ul class="footer__list">
                     <li>✉ bendecidosfc@gmail.com</li>
                     <li>☎ +569 7875 5678</li>
@@ -451,33 +458,54 @@
 
                 <ul class="footer__social">
                     <li>
-                        <a href="https://www.instagram.com/bendebende19/?hl=es" aria-label="Instagram" class="instagram" target="_blank">
+                        <a href="https://www.instagram.com/bendebende19/?hl=es"
+                            aria-label="Instagram"
+                            class="instagram"
+                            target="_blank">
+
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://web.facebook.com/bendecidos.fc.7" aria-label="Facebook" class="facebook" target="_blank">
+                        <a href="https://web.facebook.com/bendecidos.fc.7"
+                            aria-label="Facebook"
+                            class="facebook"
+                            target="_blank">
+
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://www.youtube.com/@bendecidosfc7" aria-label="YouTube" class="youtube" target="_blank">
+                        <a href="https://www.instagram.com/bendebende19/?hl=es"
+                            aria-label="YouTube"
+                            class="youtube"
+                            target="_blank">
+
                             <i class="fa-brands fa-youtube"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://www.tiktok.com/@bendecidosfc" aria-label="TikTok" class="tiktok" target="_blank">
+                        <a href="https://www.instagram.com/bendebende19/?hl=es"
+                            aria-label="TikTok"
+                            class="tiktok"
+                            target="_blank">
+
                             <i class="fa-brands fa-tiktok"></i>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
+
         <div class="footer__copy">
             © 2026 Bendecidos F.C. Todos los derechos reservados.
+
+            <div class="footer__creator">
+                Hecho por el refundador de los Bendecidos 😎
+            </div>
         </div>
     </footer>
 
